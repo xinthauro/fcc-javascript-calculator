@@ -6,4 +6,5 @@ also you can view it in [codepen](https://codepen.io/xinthauro/full/xBRBGe).
 
 ## Screenshots
 ![Screenshot 1](screenshots/javascript_calculator_01.jpg)
-![Screenshot 2](screenshots/javascript_calculator_02.jpg)
+![Screenshot 1](screenshots/javascript_calculator_02.jpg)
+![Screenshot 2](screenshots/javascript_calculator_03.jpg)
