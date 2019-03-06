@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Play|Open+Sans');
+
+:root {
+    --font-body: 'Roboto', sans-serif;
+    --font-display: 'Play', sans-serif;
+    --font-contact-description: 'Open Sans', sans-serif;
+    --color-linkedin: #0077b5;
+    --color-github: #333;
+    --color-freecodecamp: darkgreen;
+    --color-twitter: #1da1f2;
+    --color-youtube: #ff0000;
+    --color-light: #fcf9ed;
+    --color-dark: #33313b;
+    --color-button-pad: #fcf9ed;
+    --color-button-operator: #ffba5a;
+    --color-button-cancel: #ff7657;
+    --color-button-digit: #665c84;
+    --width-display: 300px;
+    --width-button-pad: 300px;
+    --height-button-pad: 250px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+.calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    border: 1.8px solid var(--color-button-digit);
+    border-radius: 5px;
+    padding: 35px 15px 15px;
+}
+
+.display {
+    width: var(--width-display);
+    margin: 0;
+    padding: 8px 4px 20px;
+    color: var(--color-dark);
+    font-family: var(--font-display);
+    font-size: 2rem;
+    text-align: right;
+}
+
+.display-status {
+    width: var(--width-display);
+    min-height: 20px;
+    margin: 0;
+    padding: 0px 4px;
+    color: var(--color-dark);
+    opacity: 0.6;
+    font-family: var(--font-display);
+    font-size: 1rem;
+    text-align: right;
+}
+
+.button-pad {
+    width: var(--width-button-pad);
+    height: var(--height-button-pad);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    border-color: var(--color-dark);
+}
+
+.button {
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+
+    outline: none;
+    box-shadow: none;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button-digit {
+    color: var(--color-light);
+    background-color: var(--color-button-digit);
+}
+
+.button-operator {
+    color: var(--color-light);
+    background-color: var(--color-button-operator);
+}
+
+.button-cancel {
+    color: var(--color-light);
+    background-color: var(--color-button-cancel);
+}
+
+#nine {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#eight {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#seven {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#six {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#five {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#four {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#three {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+#two {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#one {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#zero {
+    grid-column: 1/3;
+    grid-row: 4;
+}
+
+#decimal {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+#divide {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+#multiply {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+#subtract {
+    grid-column: 4;
+    grid-row: 3;
+}
+
+#add {
+    grid-column: 4;
+    grid-row: 4;
+}
+
+#clear {
+    grid-column: 5;
+    grid-row: 1/3;
+}
+
+#equals {
+    grid-column: 5;
+    grid-row: 3/5;
+}
+
+.contact-container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-description {
+    font-family: var(--font-contact-description);
+    opacity: 0.4;
+}
+
+.contact-links {
+    margin-left: 1rem;
+}
+
+.contact-link {
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.linkedin {
+    color: var(--color-linkedin);
+}
+
+.github {
+    color: var(--color-github);
+}
+
+.freecodecamp {
+    color: var(--color-freecodecamp);
+}
+.twitter {
+    color: var(--color-twitter);
+}
+
+.youtube {
+    color: var(--color-youtube);
+}
