@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+.container {
+  --font: 'Open Sans', sans-serif;
+  --color-linkedin: #0077b5;
+  --color-github: #030303;
+  --color-freecodecamp: #006400;
+  --color-twitter: #1da1f2;
+  --color-facebook: #3c5a99;
+  --color-youtube: #ff0000;
+  --opacity: 0.4;
+
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  font-family: var(--font);
+  opacity: var(--opacity);
+}
+
+.links {
+  margin-left: 1.5rem;
+  list-style: none;
+  display: flex;
+}
+
+.links a {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  opacity: var(--opacity);
+  text-decoration: none;
+}
+
+.links a:hover {
+  opacity: 1;
+}
+
+.linkedin {
+  color: var(--color-linkedin);
+}
+
+.github {
+  color: var(--color-github);
+}
+
+.freecodecamp {
+  color: var(--color-freecodecamp);
+}
+
+.twitter {
+  color: var(--color-twitter);
+}
+
+.facebook {
+  color: var(--color-facebook);
+}
+
+.youtube {
+  color: var(--color-youtube);
+}
