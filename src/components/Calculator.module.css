@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Play|Open+Sans');
+
+.calculator {
+  --font-body: 'Roboto', sans-serif;
+  --font-display: 'Play', sans-serif;
+  --color-light: #fcf9ed;
+  --color-dark: #33313b;
+  --color-button-pad: #fcf9ed;
+  --color-button-operator: #ffba5a;
+  --color-button-cancel: #ff7657;
+  --color-button-digit: #665c84;
+  --width-display: 300px;
+  --width-keyboard: 300px;
+  --height-keyboard: 250px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 35px 15px 15px;
+  border: 1.8px solid var(--color-button-digit);
+  border-radius: 5px;
+  font-family: var(--font-body);
+}
+
+.display {
+  width: var(--width-display);
+  margin: 0;
+  padding: 8px 4px 20px;
+  color: var(--color-dark);
+  font-family: var(--font-display);
+  font-size: 2rem;
+  text-align: right;
+}
+
+.status {
+  width: var(--width-display);
+  min-height: 20px;
+  margin: 0;
+  padding: 0px 4px;
+  color: var(--color-dark);
+  opacity: 0.6;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  text-align: right;
+}
+
+.keyboard {
+  width: var(--width-keyboard);
+  height: var(--height-keyboard);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    'seven eight nine    divide   clear'
+    'four  five  six     multiply clear'
+    'one   two   three   subtract equals'
+    'zero  zero  decimal add      equals';
+  grid-gap: 8px;
+}
+
+.key {
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+  outline: none;
+  box-shadow: none;
+}
+
+.key:hover {
+  opacity: 0.8;
+}
+
+.keydigit {
+  color: var(--color-light);
+  background-color: var(--color-button-digit);
+}
+
+.keyoperator {
+  color: var(--color-light);
+  background-color: var(--color-button-operator);
+}
+
+.keycancel {
+  color: var(--color-light);
+  background-color: var(--color-button-cancel);
+}
+
+.keynine {
+  grid-area: nine;
+}
+
+.keyeight {
+  grid-area: eight;
+}
+
+.keyseven {
+  grid-area: seven;
+}
+
+.keysix {
+  grid-area: six;
+}
+
+.keyfive {
+  grid-area: five;
+}
+
+.keyfour {
+  grid-area: four;
+}
+
+.keythree {
+  grid-area: three;
+}
+
+.keytwo {
+  grid-area: two;
+}
+
+.keyone {
+  grid-area: one;
+}
+
+.keyzero {
+  grid-area: zero;
+}
+
+.keydecimal {
+  grid-area: decimal;
+}
+
+.keydivide {
+  grid-area: divide;
+}
+
+.keymultiply {
+  grid-area: multiply;
+}
+
+.keysubtract {
+  grid-area: subtract;
+}
+
+.keyadd {
+  grid-area: add;
+}
+
+.keyclear {
+  grid-area: clear;
+}
+
+.keyequals {
+  grid-area: equals;
+}
